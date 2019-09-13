@@ -57,60 +57,45 @@ include CMakeFiles/fipc.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/fipc.dir/flags.make
 
-CMakeFiles/fipc.dir/main.c.o: CMakeFiles/fipc.dir/flags.make
-CMakeFiles/fipc.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fipc.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fipc.dir/main.c.o   -c /Users/gurjyan/Devel/fipc/main.c
+CMakeFiles/fipc.dir/prototype/producer.c.o: CMakeFiles/fipc.dir/flags.make
+CMakeFiles/fipc.dir/prototype/producer.c.o: ../prototype/producer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fipc.dir/prototype/producer.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fipc.dir/prototype/producer.c.o   -c /Users/gurjyan/Devel/fipc/prototype/producer.c
 
-CMakeFiles/fipc.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fipc.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gurjyan/Devel/fipc/main.c > CMakeFiles/fipc.dir/main.c.i
+CMakeFiles/fipc.dir/prototype/producer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fipc.dir/prototype/producer.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gurjyan/Devel/fipc/prototype/producer.c > CMakeFiles/fipc.dir/prototype/producer.c.i
 
-CMakeFiles/fipc.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fipc.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gurjyan/Devel/fipc/main.c -o CMakeFiles/fipc.dir/main.c.s
+CMakeFiles/fipc.dir/prototype/producer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fipc.dir/prototype/producer.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gurjyan/Devel/fipc/prototype/producer.c -o CMakeFiles/fipc.dir/prototype/producer.c.s
 
-CMakeFiles/fipc.dir/prototype/request.c.o: CMakeFiles/fipc.dir/flags.make
-CMakeFiles/fipc.dir/prototype/request.c.o: ../prototype/request.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fipc.dir/prototype/request.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fipc.dir/prototype/request.c.o   -c /Users/gurjyan/Devel/fipc/prototype/request.c
+CMakeFiles/fipc.dir/prototype/consumer.c.o: CMakeFiles/fipc.dir/flags.make
+CMakeFiles/fipc.dir/prototype/consumer.c.o: ../prototype/consumer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fipc.dir/prototype/consumer.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fipc.dir/prototype/consumer.c.o   -c /Users/gurjyan/Devel/fipc/prototype/consumer.c
 
-CMakeFiles/fipc.dir/prototype/request.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fipc.dir/prototype/request.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gurjyan/Devel/fipc/prototype/request.c > CMakeFiles/fipc.dir/prototype/request.c.i
+CMakeFiles/fipc.dir/prototype/consumer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fipc.dir/prototype/consumer.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gurjyan/Devel/fipc/prototype/consumer.c > CMakeFiles/fipc.dir/prototype/consumer.c.i
 
-CMakeFiles/fipc.dir/prototype/request.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fipc.dir/prototype/request.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gurjyan/Devel/fipc/prototype/request.c -o CMakeFiles/fipc.dir/prototype/request.c.s
-
-CMakeFiles/fipc.dir/prototype/worker.c.o: CMakeFiles/fipc.dir/flags.make
-CMakeFiles/fipc.dir/prototype/worker.c.o: ../prototype/worker.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fipc.dir/prototype/worker.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fipc.dir/prototype/worker.c.o   -c /Users/gurjyan/Devel/fipc/prototype/worker.c
-
-CMakeFiles/fipc.dir/prototype/worker.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fipc.dir/prototype/worker.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/gurjyan/Devel/fipc/prototype/worker.c > CMakeFiles/fipc.dir/prototype/worker.c.i
-
-CMakeFiles/fipc.dir/prototype/worker.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fipc.dir/prototype/worker.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gurjyan/Devel/fipc/prototype/worker.c -o CMakeFiles/fipc.dir/prototype/worker.c.s
+CMakeFiles/fipc.dir/prototype/consumer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fipc.dir/prototype/consumer.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/gurjyan/Devel/fipc/prototype/consumer.c -o CMakeFiles/fipc.dir/prototype/consumer.c.s
 
 # Object files for target fipc
 fipc_OBJECTS = \
-"CMakeFiles/fipc.dir/main.c.o" \
-"CMakeFiles/fipc.dir/prototype/request.c.o" \
-"CMakeFiles/fipc.dir/prototype/worker.c.o"
+"CMakeFiles/fipc.dir/prototype/producer.c.o" \
+"CMakeFiles/fipc.dir/prototype/consumer.c.o"
 
 # External object files for target fipc
 fipc_EXTERNAL_OBJECTS =
 
-fipc: CMakeFiles/fipc.dir/main.c.o
-fipc: CMakeFiles/fipc.dir/prototype/request.c.o
-fipc: CMakeFiles/fipc.dir/prototype/worker.c.o
+fipc: CMakeFiles/fipc.dir/prototype/producer.c.o
+fipc: CMakeFiles/fipc.dir/prototype/consumer.c.o
 fipc: CMakeFiles/fipc.dir/build.make
 fipc: CMakeFiles/fipc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable fipc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable fipc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fipc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -4,9 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/gurjyan/Devel/fipc/main.c" "/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles/fipc.dir/main.c.o"
-  "/Users/gurjyan/Devel/fipc/prototype/request.c" "/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles/fipc.dir/prototype/request.c.o"
-  "/Users/gurjyan/Devel/fipc/prototype/worker.c" "/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles/fipc.dir/prototype/worker.c.o"
+  "/Users/gurjyan/Devel/fipc/prototype/consumer.c" "/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles/fipc.dir/prototype/consumer.c.o"
+  "/Users/gurjyan/Devel/fipc/prototype/producer.c" "/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles/fipc.dir/prototype/producer.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

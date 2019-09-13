@@ -3,4 +3,4 @@ project(fipc C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(fipc main.c prototype/protocol.h prototype/request.c prototype/worker.c)
+add_executable(fipc prototype/fipc.h prototype/producer.c prototype/consumer.c)

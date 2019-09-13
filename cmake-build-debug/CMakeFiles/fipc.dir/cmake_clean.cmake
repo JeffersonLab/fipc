@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/fipc.dir/main.c.o"
-  "CMakeFiles/fipc.dir/prototype/request.c.o"
-  "CMakeFiles/fipc.dir/prototype/worker.c.o"
+  "CMakeFiles/fipc.dir/prototype/producer.c.o"
+  "CMakeFiles/fipc.dir/prototype/consumer.c.o"
   "fipc.pdb"
   "fipc"
 )

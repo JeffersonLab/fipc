@@ -123,86 +123,59 @@ fipc/fast:
 	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/build
 .PHONY : fipc/fast
 
-main.o: main.c.o
+prototype/consumer.o: prototype/consumer.c.o
 
-.PHONY : main.o
-
-# target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/main.c.o
-.PHONY : main.c.o
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/main.c.s
-.PHONY : main.c.s
-
-prototype/request.o: prototype/request.c.o
-
-.PHONY : prototype/request.o
+.PHONY : prototype/consumer.o
 
 # target to build an object file
-prototype/request.c.o:
-	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/request.c.o
-.PHONY : prototype/request.c.o
+prototype/consumer.c.o:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/consumer.c.o
+.PHONY : prototype/consumer.c.o
 
-prototype/request.i: prototype/request.c.i
+prototype/consumer.i: prototype/consumer.c.i
 
-.PHONY : prototype/request.i
+.PHONY : prototype/consumer.i
 
 # target to preprocess a source file
-prototype/request.c.i:
-	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/request.c.i
-.PHONY : prototype/request.c.i
+prototype/consumer.c.i:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/consumer.c.i
+.PHONY : prototype/consumer.c.i
 
-prototype/request.s: prototype/request.c.s
+prototype/consumer.s: prototype/consumer.c.s
 
-.PHONY : prototype/request.s
+.PHONY : prototype/consumer.s
 
 # target to generate assembly for a file
-prototype/request.c.s:
-	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/request.c.s
-.PHONY : prototype/request.c.s
+prototype/consumer.c.s:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/consumer.c.s
+.PHONY : prototype/consumer.c.s
 
-prototype/worker.o: prototype/worker.c.o
+prototype/producer.o: prototype/producer.c.o
 
-.PHONY : prototype/worker.o
+.PHONY : prototype/producer.o
 
 # target to build an object file
-prototype/worker.c.o:
-	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/worker.c.o
-.PHONY : prototype/worker.c.o
+prototype/producer.c.o:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/producer.c.o
+.PHONY : prototype/producer.c.o
 
-prototype/worker.i: prototype/worker.c.i
+prototype/producer.i: prototype/producer.c.i
 
-.PHONY : prototype/worker.i
+.PHONY : prototype/producer.i
 
 # target to preprocess a source file
-prototype/worker.c.i:
-	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/worker.c.i
-.PHONY : prototype/worker.c.i
+prototype/producer.c.i:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/producer.c.i
+.PHONY : prototype/producer.c.i
 
-prototype/worker.s: prototype/worker.c.s
+prototype/producer.s: prototype/producer.c.s
 
-.PHONY : prototype/worker.s
+.PHONY : prototype/producer.s
 
 # target to generate assembly for a file
-prototype/worker.c.s:
-	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/worker.c.s
-.PHONY : prototype/worker.c.s
+prototype/producer.c.s:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/prototype/producer.c.s
+.PHONY : prototype/producer.c.s
 
 # Help Target
 help:
@@ -213,15 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fipc"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... prototype/request.o"
-	@echo "... prototype/request.i"
-	@echo "... prototype/request.s"
-	@echo "... prototype/worker.o"
-	@echo "... prototype/worker.i"
-	@echo "... prototype/worker.s"
+	@echo "... prototype/consumer.o"
+	@echo "... prototype/consumer.i"
+	@echo "... prototype/consumer.s"
+	@echo "... prototype/producer.o"
+	@echo "... prototype/producer.i"
+	@echo "... prototype/producer.s"
 .PHONY : help
 
 
