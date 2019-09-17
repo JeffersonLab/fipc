@@ -6,19 +6,18 @@
 #include <stdatomic.h>
 #include <stdio.h>
 #include <stdlib.h>
-
-#include <fcntl.h>
+#include <stdbool.h>
 #include <sys/mman.h>
 #include <unistd.h>
 
-void setConsumers(int i) {
-    nConsumers = i;
-}
+#include <fcntl.h>
+
 
 int main() {
-    int count = 100000000;
 
-    int myId = 0;
+    // Flag for gracefully exiting the program
+    bool s_exit = false;
+
     int fd = shm_open(NAME, O_CREAT | O_EXCL | O_RDWR, 0600);
     if (fd < 0) {
         perror(NAME);
@@ -31,35 +30,33 @@ int main() {
 
     printf("source: mapped address: %p\n", data);
 
-    // Populate shared memory with data blocks. Blocks are equal size (defined by BLOCK_SIZE)
-    // There are N_THREADS blocks in the memory
-    for (int j = 0; j < N_THREADS; j++) {
-        for (int jj = 0; jj < BLOCK_SIZE; jj++) {
-            data->data[j][jj] = jj;
+    // Populate shared memory with data blocks. Blocks are equal size (defined by BLOCK_SIZE).
+    // There are N_BLOCKS blocks in the memory
+    for (int i = 0; i < N_BLOCKS; i++) {
+        for (int j = 0; j < BLOCK_SIZE; j++) {
+            data->data[i][j] = j;
         }
+        data->B_Flags[i] = 0;
     }
 
     // Main loop. This will become loop for ever that will consume entire file or DAQ source.
-    for (int i = 0; i < count; i++) {
-        atomic_store(&data->block_id_flag, -1);
-        while (atomic_load(&data->block_id_flag) == -1) {}
+    while (s_exit == false) {
 
-        // Get index in the shared memory data array where data was consumed
-        int thread_index = atomic_load(&data->block_id_flag);
+        // Check the B_Flags to see which buffer is already processed
+        for (int k = 0; k < N_BLOCKS; k++) {
+            int block_index = atomic_load(&data->B_Flags[k]);
+            if (block_index < 0) {
+                s_exit = true;
+            } else if (block_index > 0) {
 
-        // check my connected service, i.e. consumers
-        int c_status = atomic_load(&data->S_Flags[myId]);
-        if (c_status == nConsumers) {
-            if (thread_index > 0) {
-
-                // Update data at the thread/evt index, since data in here is already processed
-                for (int j = 0; j < BLOCK_SIZE; j++) {
-                    data->data[thread_index][j] = j;
+                // Update block at the block_index, since data in here is already processed
+                for (int l = 0; l < BLOCK_SIZE; l++) {
+                    data->data[block_index][l] = l;
                 }
+                atomic_store(&data->B_Flags[block_index], 0);
             }
-            atomic_store(&data->S_Flags[myId], 0);
-            atomic_store(&data->block_id_flag, -1);
         }
+
     }
 
     munmap(data, DATA_SIZE);
@@ -67,4 +64,3 @@ int main() {
     shm_unlink(NAME);
     return EXIT_SUCCESS;
 }
-
