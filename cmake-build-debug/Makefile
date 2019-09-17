@@ -123,6 +123,87 @@ fipc/fast:
 	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/build
 .PHONY : fipc/fast
 
+c/service.o: c/service.c.o
+
+.PHONY : c/service.o
+
+# target to build an object file
+c/service.c.o:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/c/service.c.o
+.PHONY : c/service.c.o
+
+c/service.i: c/service.c.i
+
+.PHONY : c/service.i
+
+# target to preprocess a source file
+c/service.c.i:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/c/service.c.i
+.PHONY : c/service.c.i
+
+c/service.s: c/service.c.s
+
+.PHONY : c/service.s
+
+# target to generate assembly for a file
+c/service.c.s:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/c/service.c.s
+.PHONY : c/service.c.s
+
+c/sink.o: c/sink.c.o
+
+.PHONY : c/sink.o
+
+# target to build an object file
+c/sink.c.o:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/c/sink.c.o
+.PHONY : c/sink.c.o
+
+c/sink.i: c/sink.c.i
+
+.PHONY : c/sink.i
+
+# target to preprocess a source file
+c/sink.c.i:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/c/sink.c.i
+.PHONY : c/sink.c.i
+
+c/sink.s: c/sink.c.s
+
+.PHONY : c/sink.s
+
+# target to generate assembly for a file
+c/sink.c.s:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/c/sink.c.s
+.PHONY : c/sink.c.s
+
+c/source.o: c/source.c.o
+
+.PHONY : c/source.o
+
+# target to build an object file
+c/source.c.o:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/c/source.c.o
+.PHONY : c/source.c.o
+
+c/source.i: c/source.c.i
+
+.PHONY : c/source.i
+
+# target to preprocess a source file
+c/source.c.i:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/c/source.c.i
+.PHONY : c/source.c.i
+
+c/source.s: c/source.c.s
+
+.PHONY : c/source.s
+
+# target to generate assembly for a file
+c/source.c.s:
+	$(MAKE) -f CMakeFiles/fipc.dir/build.make CMakeFiles/fipc.dir/c/source.c.s
+.PHONY : c/source.c.s
+
 prototype/consumer.o: prototype/consumer.c.o
 
 .PHONY : prototype/consumer.o
@@ -186,6 +267,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fipc"
+	@echo "... c/service.o"
+	@echo "... c/service.i"
+	@echo "... c/service.s"
+	@echo "... c/sink.o"
+	@echo "... c/sink.i"
+	@echo "... c/sink.s"
+	@echo "... c/source.o"
+	@echo "... c/source.i"
+	@echo "... c/source.s"
 	@echo "... prototype/consumer.o"
 	@echo "... prototype/consumer.i"
 	@echo "... prototype/consumer.s"

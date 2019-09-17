@@ -2,8 +2,8 @@
 // Created by Vardan Gurjyan on 9/11/19.
 //
 
-#ifndef FIPC_FIPC_H
-#define FIPC_FIPC_H
+#ifndef FIPC_PROTO_H
+#define FIPC_PROTO_H
 
 #include <stdatomic.h>
 
@@ -18,4 +18,4 @@ struct Data {
 
 #define SIZE (sizeof(struct Data) + NUM * sizeof(int))
 
-#endif //FIPC_FIPC_H
+#endif //FIPC_PROTO_H

@@ -80,13 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/gurjyan/Devel/fipc/c/fipc.h">
+			<Option target="fipc"/>
+		</Unit>
+		<Unit filename="/Users/gurjyan/Devel/fipc/c/service.c">
+			<Option target="fipc"/>
+		</Unit>
+		<Unit filename="/Users/gurjyan/Devel/fipc/c/sink.c">
+			<Option target="fipc"/>
+		</Unit>
+		<Unit filename="/Users/gurjyan/Devel/fipc/c/source.c">
+			<Option target="fipc"/>
+		</Unit>
 		<Unit filename="/Users/gurjyan/Devel/fipc/prototype/consumer.c">
 			<Option target="fipc"/>
 		</Unit>
-		<Unit filename="/Users/gurjyan/Devel/fipc/prototype/fipc.h">
+		<Unit filename="/Users/gurjyan/Devel/fipc/prototype/producer.c">
 			<Option target="fipc"/>
 		</Unit>
-		<Unit filename="/Users/gurjyan/Devel/fipc/prototype/producer.c">
+		<Unit filename="/Users/gurjyan/Devel/fipc/prototype/proto.h">
 			<Option target="fipc"/>
 		</Unit>
 		<Unit filename="/Users/gurjyan/Devel/fipc/CMakeLists.txt">

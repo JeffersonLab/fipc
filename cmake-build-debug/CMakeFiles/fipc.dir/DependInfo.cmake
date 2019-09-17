@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/gurjyan/Devel/fipc/c/service.c" "/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles/fipc.dir/c/service.c.o"
+  "/Users/gurjyan/Devel/fipc/c/sink.c" "/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles/fipc.dir/c/sink.c.o"
+  "/Users/gurjyan/Devel/fipc/c/source.c" "/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles/fipc.dir/c/source.c.o"
   "/Users/gurjyan/Devel/fipc/prototype/consumer.c" "/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles/fipc.dir/prototype/consumer.c.o"
   "/Users/gurjyan/Devel/fipc/prototype/producer.c" "/Users/gurjyan/Devel/fipc/cmake-build-debug/CMakeFiles/fipc.dir/prototype/producer.c.o"
   )

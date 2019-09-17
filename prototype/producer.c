@@ -1,7 +1,7 @@
 //
 // Created by Vardan Gurjyan on 9/11/19.
 //
-#include "fipc.h"
+#include "proto.h"
 
 #include <stdatomic.h>
 #include <stdio.h>
