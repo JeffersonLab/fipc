@@ -21,10 +21,10 @@ int main() {
     int chain_next_id;
 
     printf("Enter service position in the composition \n");
-    scanf("%d",&chain_id);
+    scanf("%d", &chain_id);
 
     printf("Enter linked service position \n");
-    scanf("%d",&chain_next_id);
+    scanf("%d", &chain_next_id);
 
 
     double time_spent = 0.0;
@@ -50,23 +50,26 @@ int main() {
         if (chain_id == 0) {
 
             //@todo this service is looking into the first block. Make it any available block
-
-
-            while (atomic_load(&data->B_Flags[0]) != 0) {}
-            // @todo perform buffer processing here
-            if (chain_next_id == 0) {
-                atomic_store(&data->B_Flags[0], 1);
-            } else {
-                atomic_store(&data->S_Flags[chain_id], 1);
+            for (int j = 0; j < N_BLOCKS; j++) {
+                if (&data->B_Flags[j] == 0) {
+                    // @todo perform buffer processing here
+                    if (chain_next_id == 0) {
+                        atomic_store(&data->B_Flags[j], 1);
+                    } else {
+                        atomic_store(&data->S_Flags[chain_id], j);
+                    }
+                    break;
+                }
             }
         } else {
-            while (atomic_load(&data->S_Flags[chain_id] -1) != 0) {}
+            while (atomic_load(&data->S_Flags[chain_id] - 1) < 0) {}
+            int data_id = atomic_load(&data->S_Flags[chain_id] - 1);
             // @todo perform buffer processing here
             if (chain_next_id == 0) {
-                atomic_store(&data->B_Flags[0], 1);
-            } else {
-                atomic_store(&data->S_Flags[chain_id], 1);
+                atomic_store(&data->B_Flags[data_id], 1);
             }
+            atomic_store(&data->S_Flags[chain_id], data_id);
+            atomic_store(&data->S_Flags[chain_id-1], -1);
         }
     }
 
