@@ -36,7 +36,7 @@ int main() {
         for (int j = 0; j < BLOCK_SIZE; j++) {
             data->data[i][j] = j;
         }
-        data->B_Flags[i] = 0;
+        atomic_store(&data->B_Flags[i], 0);
     }
 
     // Main loop. This will become loop for ever that will consume entire file or DAQ source.
